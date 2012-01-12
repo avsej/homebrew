@@ -7,7 +7,7 @@ class Libvbucket < Formula
 
   def install
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
-                          "--prefix=#{prefix}"
+                          "--prefix=#{prefix}", "--without-docs"
     system "make install"
   end
 
